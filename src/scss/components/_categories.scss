@@ -1,0 +1,29 @@
+.categories {
+    margin: 20px 100px 0px 100px;
+
+    ul {
+        display: flex;
+
+
+        li {
+            background-color: #f9f9f9;
+            padding: 10px 25px;
+            border-radius: 30px;
+            margin-right: 10px;
+            font-weight: 400;
+            cursor: pointer;
+            transition: background-color 0.1s ;
+
+            &:hover {
+                background-color: black;
+                color: #f9f9f9;
+              }
+
+            &.active {
+                background-color: #0626b4;
+                color: #f9f9f9;
+              }
+        
+        }
+    }
+}
