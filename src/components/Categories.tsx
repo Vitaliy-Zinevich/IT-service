@@ -12,15 +12,15 @@ const Categories: React.FC = () => {
   
   const [activeIndex, setActiveIndex] = React.useState(5);
 
-  const onClickCategory = (i: number) => {
-    setActiveIndex(i);
-  };
+  // const onClickCategory = (i: number) => {
+  //   setActiveIndex(i);
+  // };
  
   return (
     <div className="categories">
       <ul>
         { categories.map( (value, i) => ( 
-        <li onClick={() => {onClickCategory(i)}} className={activeIndex == i ? 'active' : ''}>
+        <li onClick={() => {setActiveIndex(i)}} className={activeIndex == i ? 'active' : ''}>
           {value}
         </li>
         ))}
