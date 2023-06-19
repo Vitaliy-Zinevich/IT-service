@@ -1,5 +1,25 @@
 .info {
     margin-top: 40px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 600px auto;
+    column-gap: 10px;
+    
+    .info_text {
+        padding: 20px 90px 40px 40px;
+        background-color: #0d30cc;
+        border-radius: 20px;
+        color: #fff;
+
+        h1 {
+          font-size: 31px;
+          padding: 0px 0px 10px 30px;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            padding-top: 10px;
+        }
+      
+    }
 }
